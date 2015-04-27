@@ -10,7 +10,7 @@ require('lib/vendor/DrChuck/Google/JWT.php');
 session_start();
 
 $glog = new \DrChuck\Google\GoogleLogin($google_client_id,
-    $google_client_secret,$this_url,$openid_realm);
+    $google_client_secret,$redirect_url,$openid_realm);
 
 if ( ! isset($_GET['code']) ) {
     $_SESSION['GOOGLE_STATE'] = md5(uniqid(rand(), TRUE));
