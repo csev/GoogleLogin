@@ -9,11 +9,6 @@ require('lib/vendor/DrChuck/Google/JWT.php');
 
 session_start();
 
-$this_url = 'https://pr4e.dr-chuck.com/GoogleLogin/index.php';
-
-$openid_realm = false;
-// $openid_realm = "https://online.dr-chuck.com";
-
 $glog = new \DrChuck\Google\GoogleLogin($google_client_id,
     $google_client_secret,$this_url,$openid_realm);
 
