@@ -9,6 +9,8 @@
 $google_client_id = 'cj5r1uns1eceqnpv4.apps.googleusercontent.com';
 $google_client_secret = '4ES...mRMr2';
 
+// For localhost redirect URIs, do not include the port per this:
+// http://stackoverflow.com/questions/11485271/google-oauth-2-authorization-error-redirect-uri-mismatch
 $redirect_url = 'http://localhost:8888/GoogleLogin/index.php';
 // $redirect_url = 'https://online.dr-chuck.com/login.php';
 
